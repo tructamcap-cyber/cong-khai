@@ -1,7 +1,10 @@
 name: run-private-code
 
 on:
-  
+  schedule:
+    - cron: '0 20 * * *'   # 11:00 VN
+    - cron: '0 2 * * *'   # 13:00 VN
+    - cron: '0 8 * * *'   # 16:00 VN
     
   workflow_dispatch: {}
   
